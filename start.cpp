@@ -10,6 +10,6 @@
 int main(){
 	Game* g= new Game(1);
 	TextInterface* t=new TextInterface(g);
-	int i=1;
+	int i=2;
 	return 0;
 }
