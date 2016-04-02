@@ -79,7 +79,9 @@ bool Game::isAllowed(Move* move) {
 }
 
 std::vector<Move*> Game::getLegalMoves() {
-	return 0;
+	std::vector<Move*> legalMoves;
+	//TODO: get all legal Moves
+	return legalMoves;
 }
 
 void Game::changeActivePlayer() {

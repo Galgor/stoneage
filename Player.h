@@ -10,9 +10,11 @@
 
 #include "enums.h"
 #include <string>
+#include <array>
 
 class Move;
 class Interface;
+class Game;
 
 class Player {
 
@@ -21,11 +23,11 @@ private:
 	std::string m_name;
 	std::array<int,5> m_resources;
 	std::array<int,3> m_tools;
-	int m_meeple;
-	int m_meepleHome;
-	int m_fields;
-	int m_points;
-	bool m_bonusResources;
+	int m_meeple=5;
+	int m_meepleHome=5;
+	int m_fields=0;
+	int m_points=0;
+	bool m_bonusResources=false;
 
 
 protected:
@@ -37,6 +39,9 @@ public:
 
 	virtual Move* getMove(Interface* pInterface, Game* pGame);
 	void addPermanent(Permanent_p bonus);
+	void addField(){m_fields++;}
+	void addMeeple(){m_meeple++;}
+	void addTool();
 	void feet();
 
 };

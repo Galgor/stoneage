@@ -6,9 +6,13 @@
  */
 
 #include "Player.h"
+#include "Game.h"
+#include "Interface.h"
 
 Player::Player() {
 	// TODO Auto-generated constructor stub
+	m_id=-1;
+	m_resources[FOOD]=12;
 
 }
 

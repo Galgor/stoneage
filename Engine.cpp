@@ -8,6 +8,8 @@
 #include "Engine.h"
 #include "Move.h"
 #include "Interface.h"
+#include "Game.h"
+#include "Player.h"
 
 Engine::Engine() {
 	// TODO Auto-generated constructor stub

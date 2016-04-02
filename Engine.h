@@ -10,6 +10,7 @@
 
 class Interface;
 class Move;
+class Game;
 
 class Engine {
 

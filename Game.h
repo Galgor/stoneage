@@ -17,6 +17,7 @@ class Interface;
 class Move;
 class Place;
 class Player;
+class Card;
 
 class Game {
 
