@@ -18,6 +18,7 @@ class Move;
 class Place;
 class Player;
 class Card;
+class Building;
 
 class Game {
 
