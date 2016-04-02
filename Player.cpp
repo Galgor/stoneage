@@ -16,3 +16,6 @@ Player::~Player() {
 	// TODO Auto-generated destructor stub
 }
 
+Move* Player::getMove(Interface* pInterface, Game* pGame) {
+	return 0;
+}

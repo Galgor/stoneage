@@ -11,6 +11,8 @@
 #include "enums.h"
 #include <string>
 
+class Move;
+class Interface;
 
 class Player {
 
@@ -28,7 +30,7 @@ public:
 			{	}
 	virtual ~Player();
 
-
+	virtual Move* getMove(Interface* pInterface, Game* pGame);
 
 };
 

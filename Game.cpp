@@ -34,14 +34,15 @@ Game::~Game() {
 
 void Game::update(){
 	//Tell all registered Interfaces to update themselves
-	for(unsigned int i=0;i<m_Observers.size();i++){
-		m_Observers[i]->update();
+	for(unsigned int i=0;i<m_pObservers.size();i++){
+		m_pObservers[i]->update();
 	}
 }
 
-void Game::evaluate(Move* m){
-	m_History.push_back(m);//add move to history
+void Game::evaluate(Move* move){
+	m_pHistory.push_back(move);//add move to history
 	//TODO: evaluate move
+	update();
 }
 
 void Game::saveGame(std::string filename){
@@ -69,3 +70,26 @@ void Game::createPlaces(){
 	m_pPlaces[RIGHTBUILDING]	= new Place_Buy_Building(RIGHTBUILDING);
 }
 
+bool Game::isFinished() {
+	return true;
+}
+
+bool Game::isAllowed(Move* move) {
+	return true;
+}
+
+std::vector<Move*> Game::getLegalMoves() {
+	return 0;
+}
+
+void Game::changeActivePlayer() {
+	if (m_activePlayer==0){
+		m_activePlayer=1;
+	}else{
+		m_activePlayer=0;
+	}
+}
+
+Player* Game::getActivePlayer() {
+	return m_pPlayers[m_activePlayer];
+}
