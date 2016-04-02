@@ -26,6 +26,7 @@ private:
 	std::vector<Move*> m_pHistory;//All Interfaces watching the game
 	std::array<Place*,14> m_pPlaces;
 	std::array<Player*,2> m_pPlayers;
+	std::array<Card*,36> m_pCardss;
 	int m_activePlayer;
 
 public:
