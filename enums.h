@@ -33,4 +33,12 @@ enum class Game_t{
 	HUMANVSHUMAN, HUMANVSAI
 };
 
+enum class Phase{
+	SET, GET, FEED
+};
+
+enum class Action{
+	SET, ASKNUMBEROFMEEPLE, GET, PAY, ROLLDICE, USETOOLS, CHOOSE
+};
+
 #endif /* ENUMS_ */

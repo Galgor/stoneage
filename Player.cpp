@@ -8,7 +8,6 @@
 #include "Player.h"
 #include "Game.h"
 #include "Interface.h"
-#include "enums.h"
 
 Player::Player() {
 	// TODO Auto-generated constructor stub

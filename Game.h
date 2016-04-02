@@ -8,6 +8,7 @@
 #include <vector>
 #include <string>
 #include <array>
+#include "enums.h"
 
 
 #ifndef GAME_H_
@@ -30,6 +31,8 @@ private:
 	std::array<Player*,2> m_pPlayers;
 	std::array<Card*,36> m_pCardss;
 	int m_activePlayer;
+	Phase m_phase;
+	Action m_action;
 
 public:
 	Game();

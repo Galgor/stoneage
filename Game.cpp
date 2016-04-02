@@ -7,7 +7,6 @@
 
 #include "Game.h"
 
-#include "enums.h"
 #include "Interface.h"
 #include "Place.h"
 
